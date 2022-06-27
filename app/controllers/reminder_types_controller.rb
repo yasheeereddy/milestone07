@@ -1,5 +1,5 @@
 class ReminderTypesController < ApplicationController
-
+ #hheyhsjhdjshjus
     def index
         @reminder_types = ReminderType.all
     end
