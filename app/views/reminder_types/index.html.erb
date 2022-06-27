@@ -1,0 +1,25 @@
+<h1>ReminderTypes#index</h1>
+
+
+<div class="container-fluid col-6">
+<%= link_to "new", new_reminder_type_url %>
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody><% c=0 %>
+    <% @reminder_types.each do |t|%>
+    <tr>
+        <% c+=1 %>
+      <th scope="row"><%= c %></th>
+      <td><%= t.name %></td>
+      <td><%= link_to "Edit","/reminder_types/#{t.id}/edit",:class=>"btn btn-primary" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

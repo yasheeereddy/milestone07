@@ -1,0 +1,8 @@
+<div class="alert alert-success" role="alert">
+
+    <h4 class="alert-heading">Error</h4>
+    <% reminder_type.errors.full_messages.each do |message| %>
+        <p><%= message %></p>
+        <hr>
+    <% end %>
+</div>
